@@ -1,0 +1,58 @@
+archetype_config_overrides = {
+  root = {
+    archetype_id = "root"
+    parameters = {
+    }
+    access_control = {}
+  }
+
+  landing-zones = {
+    archetype_id = "landing-zones"
+    parameters = {
+    }
+    access_control = {}
+  }
+
+  connectivity = {
+    archetype_id = "platform_connectivity"
+    parameters = {
+    }
+    access_control = {}
+  }
+
+  management = {
+    archetype_id = "platform_management"
+    parameters = {
+    }
+    access_control = {}
+  }
+
+  identity = {
+    archetype_id = "platform_identity"
+    parameters = {
+    }
+    access_control = {}
+  }
+
+  decommissioned = {
+    archetype_id = "platform_decommissioned"
+    parameters = {
+    }
+    access_control = {}
+  }
+
+  platform = {
+    archetype_id = "platform"
+    parameters = {
+   }
+    access_control = {}
+  }
+
+  sandboxes = {
+    archetype_id = "platform_sandboxes"
+    parameters = {
+    }
+    access_control = {}
+  }
+
+}

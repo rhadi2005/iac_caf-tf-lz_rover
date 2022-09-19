@@ -1,0 +1,27 @@
+
+#terraform state show 'module.enterprise_scale.azurerm_management_group.level_2["/providers/Microsoft.Management/managementGroups/vcfes-sandboxes"]' 
+
+/tf/rover/rover.sh \
+  --impersonate-sp-from-keyvault-url https://vcf-kv-es-xma.vault.azure.net/ \
+  -lz /tf/caf/landingzones/caf_solution/add-ons/caf_eslz \
+  -tfstate_subscription_id a9c7991e-521c-4532-93a9-5a37f82ccaed \
+  -tfstate alz_vcfes.tfstate \
+  -env vcfobs \
+  -level level1 \
+  -p ${TF_DATA_DIR}/alz_vcfes.tfstate.tfplan \
+  -a 'state rm' 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs"]'
+
+
+
+#terraform state rm 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs"]'
+
+#terraform state rm 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs"]'
+
+#terraform state rm 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs-to-LA"]'
+
+#terraform state rm 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyDefinitions/Enforce-RG-Tags"]'
+
+
+
+#module.enterprise_scale.azurerm_management_group.level_2["/providers/Microsoft.Management/managementGroups/vcfes-sandboxes"]
+

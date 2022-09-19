@@ -1,0 +1,4 @@
+
+terraform state list -state=/home/vscode/.terraform.cache/vcfobs/rover_jobs/20220918181520803862706/tfstates/level1/tfstate/alz_vcfes.tfstate  -var-file /tf/caf/configuration/level1/alz/vcfes/custom_landing_zones.tfvars -var-file /tf/caf/configuration/level1/alz/vcfes/enterprise_scale.tfvars -var-file /tf/caf/configuration/level1/alz/vcfes/landingzone.tfvars -var-file /tf/caf/configuration/level1/alz/vcfes/subscription_id_overrides.tfvars
+
+

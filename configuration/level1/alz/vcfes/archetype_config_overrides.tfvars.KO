@@ -1,0 +1,8 @@
+archetype_config_overrides = {
+  root = {
+    archetype_id = "root"
+    parameters = {
+    }
+    access_control = {}
+  }
+}

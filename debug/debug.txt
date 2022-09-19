@@ -1,0 +1,16 @@
+level1/alz/vcfes
+
+╷
+│ Error: Invalid index
+│
+│   on /home/vscode/.terraform.cache/vcfobs/modules/enterprise_scale/modules/archetypes/locals.policy_assignments.tf line 92, in locals:
+│   92:       template    = local.archetype_policy_assignments_map[policy_assignment]
+│     ├────────────────
+│     │ local.archetype_policy_assignments_map is object with 38 attributes
+│
+│ The given key does not identify an element in this collection value.
+╵
+Terraform plan return code: 1
+Error on or near line 386: Error running terraform plan; exiting with status 1
+
+

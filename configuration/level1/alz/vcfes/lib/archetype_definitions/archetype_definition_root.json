@@ -1,0 +1,20 @@
+{
+    "root": {
+        "policy_assignments": [
+        ],
+        "policy_definitions": [
+            "Deploy-Nsg-FlowLogs",
+            "Enforce-RG-Tags"
+        ],
+        "policy_set_definitions": [
+        ],
+        "role_definitions": [
+        ],
+        "archetype_config": {
+            "parameters": {
+            },
+            "access_control": {
+            }
+        }
+    }
+}

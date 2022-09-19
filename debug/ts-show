@@ -1,0 +1,16 @@
+
+#terraform state show 'module.enterprise_scale.azurerm_management_group.level_2["/providers/Microsoft.Management/managementGroups/vcfes-sandboxes"]' 
+
+
+terraform state show -state=alz_vcfes.tfstate 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs"]' 
+
+#terraform state show 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs"]'
+
+#terraform state show 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs-to-LA"]'
+
+#terraform state show 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyDefinitions/Enforce-RG-Tags"]'
+
+
+
+#module.enterprise_scale.azurerm_management_group.level_2["/providers/Microsoft.Management/managementGroups/vcfes-sandboxes"]
+

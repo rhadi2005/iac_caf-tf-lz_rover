@@ -1,0 +1,42 @@
+
+terraform state list -state=alz_vcfes.tfstate | grep "Deploy-Nsg-FlowLogs"
+terraform state list -state=alz_vcfes.tfstate | grep "Enforce-RG-Tags"
+terraform state list -state=alz_vcfes.tfstate | grep "Deny-RSG-Locations"
+
+
+ 
+
+vscode@87b77cdd4efb:/tf/caf$ terraform state list -state=alz_vcfes.tfstate | grep "Deploy-Nsg-FlowLogs"
+
+terraform state rm -state=alz_vcfes.tfstate 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs"]'
+terraform state rm -state=alz_vcfes.tfstate 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs"]'
+terraform state rm -state=alz_vcfes.tfstate 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs-to-LA"]'
+
+vscode@87b77cdd4efb:/tf/caf$ terraform state list -state=alz_vcfes.tfstate | grep "Enforce-RG-Tags"
+
+terraform state rm -state=alz_vcfes.tfstate 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyDefinitions/Enforce-RG-Tags"]'
+
+vscode@87b77cdd4efb:/tf/caf$ terraform state list -state=alz_vcfes.tfstate | grep "Deny-RSG-Locations"
+
+terraform state rm -state=alz_vcfes.tfstate 'module.enterprise_scale.azurerm_management_group_policy_assignment.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes-online/providers/Microsoft.Authorization/policyAssignments/Deny-RSG-Locations"]'
+terraform state rm -state=alz_vcfes.tfstate 'module.enterprise_scale.azurerm_management_group_policy_assignment.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyAssignments/Deny-RSG-Locations"]'
+
+
+
+/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs
+
+/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyDefinitions/Enforce-RG-Tags
+
+/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs-to-LA
+
+/providers/Microsoft.Management/managementGroups/vcfes-root/providers/Microsoft.Authorization/policyDefinitions/Enforce-RG-Tags
+
+
+
+/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs
+
+/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs-to-LA
+
+
+
+
