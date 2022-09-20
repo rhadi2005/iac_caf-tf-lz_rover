@@ -1,6 +1,7 @@
 {
   "landingzone_online": {
       "policy_assignments": [
+        "Enforce-RG-Tags"
       ],
       "policy_definitions": [
       ],
@@ -10,6 +11,10 @@
       ],
       "archetype_config": {
           "parameters": {
+            "Enforce-RG-Tags" : {
+              "Owner" : "rahmat",
+              "Department" : "Cloud PS"
+            }
           },
           "access_control": {
           }

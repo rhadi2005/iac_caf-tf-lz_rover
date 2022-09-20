@@ -1,10 +1,10 @@
 custom_landing_zones = {
 
-  vcfes-root = {
+  vcfes = {
     display_name               = "VCF OBS Custom Root"
     parent_management_group_id = "482c21b6-ee9f-4d24-9bf0-6c9258fc2003"
     archetype_config = {
-      archetype_id = "root"
+      archetype_id = "vcfes-root"
       parameters = {}
       access_control = {}
     }
@@ -18,7 +18,7 @@ custom_landing_zones = {
   vcfes-corp = {
     display_name               = "Corp"
     #parent_management_group_id = "vcfes-landing-zones"
-    parent_management_group_id = "vcfes-root"
+    parent_management_group_id = "vcfes"
     archetype_config = {
       #archetype_id   = "landingzone_corp"
       archetype_id   = "default_empty"
@@ -32,7 +32,7 @@ custom_landing_zones = {
   vcfes-online = {
     display_name               = "Online"
     #parent_management_group_id = "vcfes-landing-zones"
-    parent_management_group_id = "vcfes-root"
+    parent_management_group_id = "vcfes"
     archetype_config = {
       archetype_id   = "landingzone_online"
       parameters     = {}

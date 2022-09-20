@@ -18,7 +18,8 @@
   -env vcfobs \
   -level level1 \
   -p ${TF_DATA_DIR}/alz_vcfes.tfstate.tfplan \
-  -a 'state show' 'module.enterprise_scale.azurerm_policy_definition.enterprise_scale["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Deploy-Nsg-FlowLogs"]' 
+  -a 'state show' 'module.enterprise_scale.data.azurerm_policy_definition.external_lookup["/providers/Microsoft.Management/managementGroups/vcfes/providers/Microsoft.Authorization/policyDefinitions/Enforce-RG-Tags"]'
+
 
 
 

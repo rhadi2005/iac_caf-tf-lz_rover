@@ -1,12 +1,14 @@
 {
-    "root": {
+    "vcfes-root": {
         "policy_assignments": [
+            "Azure Backup on for VMs"
         ],
         "policy_definitions": [
             "Deploy-Nsg-FlowLogs",
             "Enforce-RG-Tags"
         ],
         "policy_set_definitions": [
+            "Enforce-Mandatory-Tags"
         ],
         "role_definitions": [
         ],

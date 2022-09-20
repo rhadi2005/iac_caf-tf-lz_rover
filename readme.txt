@@ -56,3 +56,19 @@ https://learn.hashicorp.com/tutorials/terraform/microsoft-caf-enterprise-scale
 How-to assign builtin azure policy using standard terraform
 https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-terraform
 
+
+
+azure policy using terraform examples
+https://github.com/gettek/terraform-azurerm-policy-as-code
+
+https://jloudon.com/cloud/Azure-Policy-as-Code-with-Terraform-Part-1/
+good one : Governance at Scale with Terraform Cloud and Azure Policies
+
+https://jloudon.com/cloud/Azure-Policy-as-Code-with-Terraform-Part-2/
+pattern 3 : builtin azure policy set definition
+
+https://github.com/jesseloudon?tab=repositories
+https://github.com/jesseloudon/Azure-MG-Sub-Governance-Reporting 
+https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting
+Azure-MG-Sub-Governance-Reporting 
+

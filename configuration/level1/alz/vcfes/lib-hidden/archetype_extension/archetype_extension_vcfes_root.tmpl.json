@@ -1,0 +1,18 @@
+{
+    "extend_vcfes_root": {
+      "policy_assignments": [
+        "Enforce-Mandatory-Tags"
+      ],
+      "policy_definitions": [
+        "Enforce-RG-Tags"
+      ],
+      "policy_set_definitions": [
+        "Enforce-Mandatory-Tags"
+      ],
+      "role_definitions": [],
+      "archetype_config": {
+        "access_control": {
+        }
+      }
+    }
+  }
