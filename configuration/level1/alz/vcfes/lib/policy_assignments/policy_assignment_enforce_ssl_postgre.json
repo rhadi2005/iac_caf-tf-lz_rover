@@ -1,0 +1,17 @@
+{
+    "name": "Enforce SSL connection",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "displayName": "Enforce SSL connection enabled PostgreSQL",
+        "description": "Enforce SSL connection should be enabled for PostgreSQL database servers ",
+        "notScopes": [],
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d158790f-bfb0-486c-8631-2dc6b4e8e6af",
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": null
+    },
+    "location": "${default_location}",
+    "identity": {
+        "type": "None"
+    }
+}

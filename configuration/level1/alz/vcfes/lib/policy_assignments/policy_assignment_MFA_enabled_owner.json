@@ -1,0 +1,18 @@
+{
+    "name": "MFA enabled on accounts owner",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "displayName": "MFA should be enabled on accounts with owner permissions",
+        "description": "MFA should be enabled on accounts with owner permissions on your subscription",
+        "notScopes": [],
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/aa633080-8b72-40c4-a2d7-d00c03e80bed",
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": null
+    },
+    "location": "${default_location}",
+    "identity": {
+        "type": "None"
+    }
+  }
+             

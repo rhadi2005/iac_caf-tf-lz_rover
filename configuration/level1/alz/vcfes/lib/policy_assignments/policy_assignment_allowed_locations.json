@@ -1,0 +1,18 @@
+ {
+    "name": "Allowed locations",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "displayName": "Allowed locations",
+        "description": "Allowed locations (global, West-europe, France-central)",
+        "notScopes": [],
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": null
+    },
+    "location": "${default_location}",
+    "identity": {
+        "type": "None"
+    }
+  }
+             
